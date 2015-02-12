@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	<script type="text/javascript">
+	var value;
+	function button1()
+	{
+		document.getElementById("text").value +=1;
+	}
+	function button2()
+	{	
+		document.getElementById("text").value +=2;
+	}
+	function button3()
+	{	
+		document.getElementById("text").value +=3;
+	}
+	function button4()
+	{	
+		document.getElementById("text").value +=4;
+	}
+	function button5()
+	{	
+		document.getElementById("text").value +=5;
+	}
+	function button6()
+	{	
+		document.getElementById("text").value +=6;
+	}
+	function button7()
+	{	
+		document.getElementById("text").value +=7;
+	}
+	function button8()
+	{	
+		document.getElementById("text").value +=8;
+	}
+	function button9()
+	{	
+		document.getElementById("text").value +=9;
+	}
+	function button0()
+	{	
+		document.getElementById("text").value +=0;
+	}
+	function plus()
+	{
+		value = document.getElementById("text").value;
+		if (value.match(/[\+,\-,\*,\/,\%]/g)) {
+			var s = value.split(/[\+,\-,\*,\/,\%]/g);
+			if (value.match(/[\+,\-,\*,\/,\%]/g) == "+") {
+				var t = parseInt(s[0])+parseInt(s[1]);
+				document.getElementById("text").value = t + "+";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "-") {
+				var t = parseInt(s[0])-parseInt(s[1]);
+				document.getElementById("text").value = t + "+";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "*") {
+				var t = parseInt(s[0])*parseInt(s[1]);
+				document.getElementById("text").value = t + "+";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "/") {
+				var t = parseInt(s[0])/parseInt(s[1]);
+				document.getElementById("text").value = t + "+";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "%") {
+				var t = parseInt(s[0])%parseInt(s[1]);
+				document.getElementById("text").value = t + "+";
+			}
+		}
+		else if (value.match(/\w+/g)) {
+			document.getElementById("text").value = value + "+";
+		}
+	}
+	function minus()
+	{
+		value = document.getElementById("text").value;
+		if (value.match(/[\+,\-,\*,\/,\%]/g)) {
+			var s = value.split(/[\+,\-,\*,\/,\%]/g);
+			if (value.match(/[\+,\-,\*,\/,\%]/g) == "-") {
+				var t = parseInt(s[0])-parseInt(s[1]);
+				document.getElementById("text").value = t + "-";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "+") {
+				var t = parseInt(s[0])+parseInt(s[1]);
+				document.getElementById("text").value = t + "-";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "*") {
+				var t = parseInt(s[0])*parseInt(s[1]);
+				document.getElementById("text").value = t + "-";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "/") {
+				var t = parseInt(s[0])/parseInt(s[1]);
+				document.getElementById("text").value = t + "-";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "%") {
+				var t = parseInt(s[0])%parseInt(s[1]);
+				document.getElementById("text").value = t + "-";
+			}
+		}
+		else if (value.match(/\w+/g)) {
+			document.getElementById("text").value = value + "-";
+		}
+	}
+	function multiply()
+	{
+		value = document.getElementById("text").value;
+		if (value.match(/[\+,\-,\*,\/,\%]/g)) {
+			var s = value.split(/[\+,\-,\*,\/,\%]/g);
+			if (value.match(/[\+,\-,\*,\/,\%]/g) == "*") {
+				var t = parseInt(s[0])*parseInt(s[1]);
+				document.getElementById("text").value = t + "*";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "-") {
+				var t = parseInt(s[0])-parseInt(s[1]);
+				document.getElementById("text").value = t + "*";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "+") {
+				var t = parseInt(s[0])+parseInt(s[1]);
+				document.getElementById("text").value = t + "*";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "/") {
+				var t = parseInt(s[0])/parseInt(s[1]);
+				document.getElementById("text").value = t + "*";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "%") {
+				var t = parseInt(s[0])%parseInt(s[1]);
+				document.getElementById("text").value = t + "*";
+			}
+		}
+		else if (value.match(/\w+/g)) {
+			document.getElementById("text").value = value + "*";
+		}
+	}
+	function division()
+	{
+		value = document.getElementById("text").value;
+		if (value.match(/[\+,\-,\*,\/,\%]/g)) {
+			var s = value.split(/[\+,\-,\*,\/,\%]/g);
+			if (value.match(/[\+,\-,\*,\/,\%]/g) == "/") {
+				var t = parseInt(s[0])/parseInt(s[1]);
+				document.getElementById("text").value = t + "/";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "-") {
+				var t = parseInt(s[0])-parseInt(s[1]);
+				document.getElementById("text").value = t + "/";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "+") {
+				var t = parseInt(s[0])+parseInt(s[1]);
+				document.getElementById("text").value = t + "/";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "*") {
+				var t = parseInt(s[0])*parseInt(s[1]);
+				document.getElementById("text").value = t + "/";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "%") {
+				var t = parseInt(s[0])%parseInt(s[1]);
+				document.getElementById("text").value = t + "/";
+			}
+		}
+		else if (value.match(/\w+/g)) {
+			document.getElementById("text").value = value + "/";
+		}
+	}
+	function moduloes()
+	{
+		value = document.getElementById("text").value;
+		if (value.match(/[\+,\-,\*,\/,\%]/g)) {
+			var s = value.split(/[\+,\-,\*,\/,\%]/g);
+			if (value.match(/[\+,\-,\*,\/,\%]/g) == "%") {
+				var t = parseInt(s[0])%parseInt(s[1]);
+				document.getElementById("text").value = t + "%";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "-") {
+				var t = parseInt(s[0])-parseInt(s[1]);
+				document.getElementById("text").value = t + "%";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "+") {
+				var t = parseInt(s[0])+parseInt(s[1]);
+				document.getElementById("text").value = t + "%";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "/") {
+				var t = parseInt(s[0])/parseInt(s[1]);
+				document.getElementById("text").value = t + "%";
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "*") {
+				var t = parseInt(s[0])*parseInt(s[1]);
+				document.getElementById("text").value = t + "%";
+			}
+		}
+		else if (value.match(/\w+/g)) {
+			document.getElementById("text").value = value + "%";
+		}
+	}
+	function clearText()
+	{
+		document.getElementById("text").value = "";
+	}
+	function equals()
+	{
+		value = document.getElementById("text").value;
+		if (value.match(/[\+,\-,\*,\/,\%]/g)) {
+			var s = value.split(/[\+,\-,\*,\/,\%]/g);
+			if (value.match(/[\+,\-,\*,\/,\%]/g) == "%") {
+				var t = parseInt(s[0])%parseInt(s[1]);
+				document.getElementById("text").value = t;
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "-") {
+				var t = parseInt(s[0])-parseInt(s[1]);
+				document.getElementById("text").value = t;
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "+") {
+				var t = parseInt(s[0])+parseInt(s[1]);
+				document.getElementById("text").value = t;
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "/") {
+				var t = parseInt(s[0])/parseInt(s[1]);
+				document.getElementById("text").value = t;
+			}
+			else if (value.match(/[\+,\-,\*,\/,\%]/g) == "*") {
+				var t = parseInt(s[0])*parseInt(s[1]);
+				document.getElementById("text").value = t;
+			}
+		}
+		else
+		{
+			alert("error");
+		}
+	}
+	</script>
+	</head>
+	<body>
+	<input type = "text" id = "text" name = "text" placeholder = "0"><br/><br/>
+	<input type = "button" id = "btn1" name = "btn1" value = "1" onclick = "button1()">&nbsp;&nbsp;
+	<input type = "button" id = "btn2" name = "btn2" value = "2" onclick = "button2()">&nbsp;&nbsp;
+	<input type = "button" id = "btn3" name = "btn2" value = "3" onclick = "button3()">&nbsp;&nbsp;
+	<input type = "button" id = "btn4" name = "btn4" value = "4" onclick = "button4()">&nbsp;&nbsp;
+	<input type = "button" id = "btn5" name = "btn5" value = "5" onclick = "button5()"><br/><br/>
+	<input type = "button" id = "btn6" name = "btn6" value = "6" onclick = "button6()">&nbsp;&nbsp;
+	<input type = "button" id = "btn7" name = "btn7" value = "7" onclick = "button7()">&nbsp;&nbsp;
+	<input type = "button" id = "btn8" name = "btn8" value = "8" onclick = "button8()">&nbsp;&nbsp;
+	<input type = "button" id = "btn9" name = "btn9" value = "9" onclick = "button9()">&nbsp;&nbsp;
+	<input type = "button" id = "btn0" name = "btn0" value = "0" onclick = "button0()"><br/><br/>
+	<input type = "button" id = "plus" name = "plus" value = "+" onclick = "plus()">&nbsp;&nbsp;
+	<input type = "button" id = "minus" name = "minus" value = "-" onclick = "minus()">&nbsp;&nbsp;
+	<input type = "button" id = "multiply" name = "multiply" value = "*" onclick = "multiply()">&nbsp;&nbsp;
+	<input type = "button" id = "division" name = "division" value = "/" onclick = "division()">&nbsp;&nbsp;
+	<input type = "button" id = "moduloes" name = "moduloes" value = "%" onclick = "moduloes()"><br/><br/>
+	<input type = "button" id = "clear" name = "clear" value = "C" onclick = "clearText();">
+	<input type = "button" id = "equals" name = "equals" value = "=" onclick = "equals()" style="width:130px;">
+	</body>
+</html>
